@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "大自然",
             content: "帰りの飛行機の時間も迫ってきた頃、最後に北海道の大きさを体験することにした。あたり一面「何も無い」が広がる光景、東京では到底味わえない開放感が最高だった。",
             image: "nothing.jpg","nothting2.jpg"
-        },
+        }
     ];
 
     const diaryContainer = document.getElementById('diary-container');
