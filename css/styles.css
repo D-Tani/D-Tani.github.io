@@ -44,7 +44,7 @@ footer {
     padding: 1rem;
     background-color: #4CAF50;
     color: white;
-    position: static;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
