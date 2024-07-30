@@ -24,11 +24,14 @@ section {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+section .photos{
+    display: flex;
+    justify-content: space-between;
+}
+
 section img {
-    width: 50%;
-    height: 50%;
-    border-radius: 8px;
-    margin-bottom: 0.5em;
+    max-width: 48%;
+    border-radius: 5px;
 }
 
 section h2 {
