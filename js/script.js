@@ -19,17 +19,20 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "2日目 SHIRO みんなの工場",
             date: "2023年8月30日",
             content: "砂川にある国産フレグランスブランドの工場施設へ。やはり女性客が多くややアウェーな雰囲気を感じた。施設内のカフェでゆっくりとした時間を過ごし、お土産を買って後にした。",
-            image: "shirofactory.jpg","shirocafe.jpg"
+            image: "shirofactory.jpg",
+            image: "shirocafe.jpg"
         },
         {
             title: "昼食",
             content: "何もない平原の中にポツンとある喫茶店で昼食。大地と空が近くさえ感じる景色を見ながら、柔らかい肉とピザトーストにかぶりついた。なんと贅沢な時間だろう。",
-            image: "coffee.jpg","plate.jpg"
+            image: "coffee.jpg",
+            image: "plate.jpg"
         },
         {
             title: "大自然",
             content: "帰りの飛行機の時間も迫ってきた頃、最後に北海道の大きさを体験することにした。あたり一面「何も無い」が広がる光景、東京では到底味わえない開放感が最高だった。",
-            image: "nothing.jpg","nothting2.jpg"
+            image: "nothing.jpg",
+            image: "nothting2.jpg"
         }
     ];
 
