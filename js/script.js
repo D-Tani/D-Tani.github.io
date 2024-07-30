@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const diaryEntries = [
+    const sections = [
         {
             title: "1日目 上陸",
             date: "2023年8月29日",
@@ -37,30 +37,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ];
 
-    const diaryContainer = document.getElementById('diary-container');
+    const diary = document.getElementById('diary');
 
-    diaryEntries.forEach(entry => {
+    sections.forEach(sectionData => {
         const section = document.createElement('section');
-
-        const img = document.createElement('img');
+        const photoElements = document.createElement('img');
         img.src = entry.image;
         img.alt = entry.title;
 
-        const h2 = document.createElement('h2');
-        h2.textContent = entry.title;
+        section.innerHTML = `
+            <h2>${sectionData.title}</h2>
+            <p>${sectionData.text}</p>
+            <div class="photos">
+                ${photoElements}
+            </div>
+        `;
 
-        const date = document.createElement('p');
-        date.textContent = entry.date;
-        date.style.fontStyle = 'italic';
-
-        const content = document.createElement('p');
-        content.textContent = entry.content;
-
-        section.appendChild(img);
-        section.appendChild(h2);
-        section.appendChild(date);
-        section.appendChild(content);
-
-        diaryContainer.appendChild(section);
+        diary.appendChild(section);
     });
 });
