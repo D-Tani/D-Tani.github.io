@@ -30,6 +30,7 @@ section .photos{
 }
 
 section .photos img {
+    max-height: 50%;
     max-width: 48%;
     border-radius: 5px;
 }
