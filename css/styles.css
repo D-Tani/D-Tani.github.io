@@ -43,7 +43,7 @@ footer {
     padding: 1rem;
     background-color: #4CAF50;
     color: white;
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
 }
