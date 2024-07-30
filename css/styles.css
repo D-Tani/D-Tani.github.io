@@ -2,33 +2,29 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #f4f4f4;
 }
 
 header {
     background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1em 0;
 }
 
 main {
-    padding: 1rem;
+    padding: 1em;
 }
 
 section {
     background-color: white;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-section h2 {
-    margin-top: 0;
-}
-
-section .photos {
+section .photos{
     display: flex;
     justify-content: space-between;
 }
@@ -36,4 +32,18 @@ section .photos {
 section .photos img {
     max-width: 48%;
     border-radius: 5px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }

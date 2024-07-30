@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const sections = [
+    const diaryEntries = [
         {
             title: "1日目 上陸",
             date: "2023年8月29日",
@@ -37,22 +37,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ];
 
-    const diary = document.getElementById('diary');
+    const diaryContainer = document.getElementById('diary-container');
 
-    sections.forEach(sectionData => {
+    diaryEntries.forEach(entry => {
         const section = document.createElement('section');
-        const photoElements = document.createElement('img');
-        img.src = entry.image;
-        img.alt = entry.title;
 
-        section.innerHTML = `
-            <h2>${sectionData.title}</h2>
-            <p>${sectionData.text}</p>
-            <div class="photos">
-                ${photoElements}
-            </div>
-        `;
+        const h2 = document.createElement('h2');
+        h2.textContent = entry.title;
 
-        diary.appendChild(section);
+        const date = document.createElement('p');
+        date.textContent = entry.date;
+        date.style.fontStyle = 'italic';
+
+        const content = document.createElement('p');
+        content.textContent = entry.content;
+
+        section.appendChild(h2);
+        section.appendChild(date);
+        section.appendChild(content);
+
+        entry.photos.forEach(photo => {
+            const img = document.createElement('img');
+            img.src = photo;
+            img.alt = entry.title;
+            section.appendChild(img);
+        });
+        
+        diaryContainer.appendChild(section);
     });
 });
