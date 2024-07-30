@@ -29,7 +29,7 @@ section .photos{
     justify-content: space-between;
 }
 
-section img {
+section .photos img {
     max-width: 48%;
     border-radius: 5px;
 }
