@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             title: "温泉の横にある森の家々",
+            date: "",
+            content: "",
             image: "foresthouses.jpg"
         },
         {
@@ -24,15 +26,17 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             title: "昼食",
+            date: "",
             content: "何もない平原の中にポツンとある喫茶店で昼食。大地と空が近くさえ感じる景色を見ながら、柔らかい肉とピザトーストにかぶりついた。なんと贅沢な時間だろう。",
             image: "coffee.jpg",
-            image: "plate.jpg"
+            image2: "plate.jpg"
         },
         {
             title: "大自然",
+            date: "",
             content: "帰りの飛行機の時間も迫ってきた頃、最後に北海道の大きさを体験することにした。あたり一面「何も無い」が広がる光景、東京では到底味わえない開放感が最高だった。",
-            image: "nothing.jpg",
-            image: "nothting2.jpg"
+            image: "nature.jpg",
+            image2: "nature2.jpg"
         }
     ];
 
@@ -44,6 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const img = document.createElement('img');
         img.src = entry.image;
         img.alt = entry.title;
+
+        const img2 = document.createElement('img');
+        img2.src = entry.image;
+        img2.alt = entry.title;
 
         const h2 = document.createElement('h2');
         h2.textContent = entry.title;
